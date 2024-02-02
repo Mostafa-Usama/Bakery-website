@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --primary: hsl(28, 88%, 62%);
+    --secondery: rgb(231, 231, 231);
+    --body-font: "Montserrat", sans-serif;
+    --second-font: "Dancing Script", cursive;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: hsl(0, 0%, 6%);
+    /* margin-top: -15px; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondery);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+i {
+    cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(173, 173, 173);
+
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid var(--primary);
+}
+
+input,
+textarea {
+    caret-color: var(--primary);
+    resize: none;
+}
+
+section {
+    
+    margin-top: 70px;
+}
+.navbar-brand{
+    font-family: var(--second-font);
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary) !important;
+    letter-spacing: -2px;
+}
+.nav-link{
+    font-weight: 600;
+    
+}
+.nav-link:hover,
+.active-link{
+    color: var(--primary) !important;
+}
+
+.btn{
+    background-color: var(--primary);
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-family: var(--body-font);
+    color: black !important;
+    border: none;
+}
+.btn:hover{
+    background-color: hsl(28, 100%, 60%);
+}
+.btn:active{
+    background-color: hsl(28, 100%, 60%) !important;
+    border:none ;
+}
+#home{
+    padding-top: 80px;
+    background-image:url(../images/home-bg.jpg) ;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p{
+    font-size: 15px;
+    opacity: .7;
+    color: white;
+}
+h1{
+    color: white;
+    font-family: var(--second-font);
+    font-size: 60px;
+    
+}
+.blur::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    h1 {
+            font-size: 45px;
+        }
+    .menu{
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: right .5s;
+        flex-direction: column;
+        align-items: start !important;
+        padding: 50px;
+    }
+
+   .closed{
+    right: -100%;
+   }
+    ul{
+        flex-direction: column;
+    }
+    #btnClose, 
+    #btnOpen{
+        display: block !important;
+    }
+    .images{
+        display: block !important;
+    }
+    .added{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .menu{
+        width: 80%;
+    }
+}
+
+#about h2,
+#new h2,
+#fav h2,
+#location h2,
+#blog h2{
+    text-align: center;
+    color: white;
+    font-family: var(--second-font);
+    font-size: 50px;
+}
+
+
+
+#new h3,
+#fav h3,
+#blog h3,
+footer h3{
+    color: var(--primary);
+    font-family: var(--second-font);
+    font-size: 30px;
+}
+
+#fav img{
+    transform: translateY(-50px) scale(1.2) rotate(-20deg);
+}
+
+ .box{
+    transition: border .3s;
+    border: 2px solid transparent;
+    background-color: hsl(0, 0%, 10%);
+    box-shadow: 0px 12px 24px hsla(0, 0%, 0%, .8)
+}
+#fav .box:hover{
+    border-color: var(--primary);
+}
+#fav h5{
+    font-family: var(--second-font);
+}
+
+#location{
+    background-image: url(../images/visit-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+#location::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(rgba(15, 15, 15) 0%, rgba(0, 0, 0, 0.151) 60%, rgb(15, 15, 15) 100%);
+    z-index: -1;
+}
+.text{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.text:hover{
+    color: var(--primary);
+    padding-left: 5px;
+}
+.scroll-up{
+    color: var(--primary);
+    font-size: 50px;
+    animation: 1.5s infinite scroll-arrow ;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.scroll-up:hover{
+    color: hsl(28, 100%, 60%);
+}
+@keyframes scroll-arrow {
+    15%{
+        transform: translateY(-10px);
+    }
+    30%{
+        transform: translateY(10px);
+    }
+    45%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    70%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* animations */
+section{
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s opacity;
+}
+section.show-animation{
+    opacity: 1;
+}
+
+/* Section 1 */
+
+
+.hero-img{
+    transform: rotate(0deg) scale(1.2);
+    transition: 1s transform;
+}
+
+.sec1.show-animation .hero-img{
+    transform: rotate(15deg) scale(1);
+}
+.sec1 h1,
+ .sec1 p,
+ .sec1 button,
+ .sec1 img{
+    transform: scale(1.2);
+    transition: 1s transform;
+}
+.sec1.show-animation h1,
+.sec1.show-animation p, 
+.sec1.show-animation button, 
+.sec1.show-animation img{
+    transform:  scale(1);
+}
+
+/* Section 2 */
+
+
+
+.sec2 .animate{
+    transform: scale(1.2);
+    transition: 1s transform;
+}
+.sec2.show-animation .animate{
+    transform: scale(1);
+}
+
+/* Section 3 */
+.sec3.show-animation .animate{
+    transform: rotate(-20deg) scale(.9);
+    transition: 1s;
+    transition-delay: calc(var(--i) * .2s);
+   
+}
+/* Section 4 */
+.sec4.show-animation .animate{
+    transform: rotate(0deg) scale(1) translateY(-50px) !important;
+    transition: 1s;
+    transition-delay: calc(var(--i) * .1s);
+}
+
+/* Section 5 */
+.sec5 .animate{
+    transform: scale(1.2);
+    transition: 1s transform;
+}
+.sec5.show-animation .animate{
+    transform: scale(1);
+}
+
+/* Section 6 */
+.sec6 .animate{
+    opacity: 0;
+    transition: 1s opacity;
+}
+.sec6.show-animation .animate{
+    opacity: 1;
+    transition-delay:calc(var(--i) * .2s); ;
+}
