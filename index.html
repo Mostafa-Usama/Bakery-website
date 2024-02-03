@@ -13,7 +13,7 @@
     <header>
         <nav class="py-2 position-fixed top-0 z-3 w-100 ">
             <div class="container d-flex justify-content-between">
-                <a class="navbar-brand " href="index.html">Bakery</a>
+                <a aria-label="Home" class="navbar-brand " href="index.html">Bakery</a>
                 <div class="menu closed z-2">
                     <ul class="d-flex  me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
@@ -35,8 +35,8 @@
                             <a class="nav-link px-4 py-3 active text-white" aria-current="page" href="#blog">Blog</a>
                         </li>
                         <div class="images" style="display: none;">
-                            <img src="images/bread-1.png" class="position-absolute" width="50" alt="" style="top: 30%; left: 60%;">
-                            <img src="images/bread-3.png" class="position-absolute" width="80" alt="" style="top: 60%; left: 30%;">
+                            <img src="images/bread-1.png" loading="lazy" class="position-absolute" width="50" alt="bread" style="top: 30%; left: 60%;">
+                            <img src="images/bread-3.png" loading="lazy" class="position-absolute" width="80" alt="bread" style="top: 60%; left: 30%;">
                         </div>
                         <i class="far fa-window-close fa-2x position-absolute text-white z-1" id="btnOpen" style="right: 30px; top:30px; display: none;"></i>
                         
@@ -48,7 +48,7 @@
     </header>
     
     <div class="position-fixed z-3" style="bottom: 30px; right: 30px;">
-        <a href="#home"><i class="fas fa-arrow-circle-up scroll-up"></i></a>
+        <a aria-label="Home" href="#home"><i class="fas fa-arrow-circle-up scroll-up"></i></a>
     </div>
     
         <section id="home" class="m-0 sec1 ">
@@ -58,14 +58,14 @@
                         <h1>
                             Select The Best <br> Quality Breads
                         </h1>
-                        <p class="text-white opacity-75 my-3">Lorem ipsum dolor sit amet consectevoluptate distinctio aut reprehenderit. Exercitationem sequi voluptates sint? Explicabo doloremque beatae exercitationem velit inventore iste?</p>
+                        <p class="text-white opacity-75 my-3">Lorem ipsum dolor sit amet consectevoluptate dis doloremque beatae exercitationem velit inventore iste?</p>
                         <div class="d-flex justify-content-center justify-content-md-start gap-5">
-                            <button class="btn mt-4">Learn More</button>
-                            <img src="images/bread-1.png" width="80" alt="">
+                            <button aria-label="learn more" class="btn mt-4">Learn More</button>
+                            <img loading="lazy" src="images/bread-1.png" width="80" alt="bread">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/home-bread.png" class="img-fluid mb-5 hero-img" style="width: 450px;"  alt="">
+                        <img loading="lazy" src="images/home-bread.png" class="img-fluid mb-5 hero-img" style="width: 450px;"  alt="bread">
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
         <div class="container">
             <div class="row justify-content-center gap-5 align-items-center">
                 <div class="col-md-5 text-center">
-                    <img src="images/about-bread.png" style=" max-height: 500px;"  class="img-fluid" alt="">
+                    <img loading="lazy" src="images/about-bread.png" style=" max-height: 500px;"  class="img-fluid" alt="bread">
 
                 </div>
                 <div class="col-md-5 text-white text-center text-md-start animate">
@@ -86,8 +86,8 @@
                     We have an extensive line of freshly prepared bakery
                     and coffee products.</p>
                 <div class="d-flex justify-content-center justify-content-md-start gap-5">
-                    <button class="btn mt-4">Learn More</button>
-                    <img src="images/bread-4.png" width="80" alt="">
+                    <button aria-label="learn more" class="btn mt-4">Learn More</button>
+                    <img  loading="lazy" src="images/bread-4.png" width="80" alt="bread">
                 </div>
                 </div>
             </div>
@@ -108,14 +108,14 @@
                              
                         </div>
                         <div class="col-md-12 col-5 ">
-                            <img src="images/new-bread-1.png" style="--i:0" class="animate img-fluid" alt="">
+                            <img loading="lazy" src="images/new-bread-1.png" style="--i:0" class="animate img-fluid" alt="bread">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 ">
                     <div class="row gy-5 gy-md-0 flex-md-column flex-row align-items-center text-start text-md-center">
                         <div class="col-md-12 col-5 ">
-                            <img src="images/new-bread-2.png"style="--i:1" class="animate img-fluid" alt="">
+                            <img loading="lazy" src="images/new-bread-2.png"style="--i:1" class="animate img-fluid" alt="bread">
                         </div>
                         <div class="col-md-12 col-7 ">
                             <h3 class="my-3">Whole Grain Bread</h3>
@@ -134,12 +134,12 @@
                     
                         </div>
                         <div class="col-md-12 col-5 ">
-                            <img src="images/new-bread-3.png" style="--i:2" class="animate img-fluid" alt="">
+                            <img loading="lazy" src="images/new-bread-3.png" style="--i:2" class="animate img-fluid" alt="bread">
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn m-auto d-block px-5">See More</button>
+            <button aria-label="see more" class="btn m-auto d-block px-5">See More</button>
         </div>
     </section>
 
@@ -149,39 +149,39 @@
             <div class="row my-5 gy-5  justify-content-center ">
                 <div class="col-6 col-lg-3">
                     <div class="box text-center" style="height: 85%;">
-                        <img src="images/favorite-bread-1.png"  class="img-fluid animate" style="--i:0; max-width: 150px;" alt="">
+                        <img loading="lazy" src="images/favorite-bread-1.png"  class="img-fluid animate" style="--i:0; max-width: 150px;" alt="bread">
                         <div class="p-3  text-start" style="transform: translateY(-50px);">
                             <h3>Whole Grain</h3>
                             <p>Bread</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="text-white">$6.00</h5>
-                                <button class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
+                                <button aria-label="add to cart" class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="box text-center" style="height: 85%;">
-                        <img src="images/favorite-bread-2.png"  class="img-fluid animate" style="--i:1; max-width: 150px;" alt="">
+                        <img loading="lazy" src="images/favorite-bread-2.png"  class="img-fluid animate" style="--i:1; max-width: 150px;" alt="bread">
                         <div class="p-3  text-start" style="transform: translateY(-50px);">
                             <h3>Rye Bread</h3>
                             <p>Bread</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="text-white">$4.00</h5>
-                                <button class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
+                                <button aria-label="add to cart" class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="box text-center" style="height: 85%;">
-                        <img src="images/favorite-bread-3.png"  class="img-fluid animate" style="--i:2; max-width: 150px;" alt="">
+                        <img loading="lazy" src="images/favorite-bread-3.png"  class="img-fluid animate" style="--i:2; max-width: 150px;" alt="bread">
                         <div class="p-3  text-start" style="transform: translateY(-50px);">
                             <h3>Multigrain</h3>
                             <p>Bread</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <h5 class="text-white">$5.00</h5>
-                                <button class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
+                                <button aria-label="add to cart" class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
                             </div>
                         </div>
                     </div>
@@ -189,39 +189,39 @@
                 <div class="added mt-0"></div>
             <div class="col-6 col-lg-3">
                 <div class="box text-center" style="height: 85%;">
-                    <img src="images/favorite-bread-4.png"  class="img-fluid animate" style="--i:3; max-width: 150px;" alt="">
+                    <img loading="lazy" src="images/favorite-bread-4.png"  class="img-fluid animate" style="--i:3; max-width: 150px;" alt="bread">
                     <div class="p-3  text-start" style="transform: translateY(-50px);">
                         <h3>Wheat</h3>
                         <p>Bread</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="text-white">$7.00</h5>
-                            <button class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
+                            <button aria-label="add to cart" class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="box text-center" style="height: 85%;">
-                    <img src="images/favorite-bread-5.png"  class="img-fluid animate" style="--i:4; max-width: 150px;" alt="">
+                    <img loading="lazy" src="images/favorite-bread-5.png"  class="img-fluid animate" style="--i:4; max-width: 150px;" alt="bread">
                     <div class="p-3  text-start" style="transform: translateY(-50px);">
                         <h3>Sourdough</h3>
                         <p>Bread</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="text-white">$3.00</h5>
-                            <button class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
+                            <button aria-label="add to cart" class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
                 <div class="box text-center" style="height: 85%;">
-                    <img src="images/favorite-bread-6.png"  class="img-fluid animate" style="--i:5; max-width: 150px;" alt="">
+                    <img loading="lazy" src="images/favorite-bread-6.png"  class="img-fluid animate" style="--i:5; max-width: 150px;" alt="bread">
                     <div class="p-3  text-start" style="transform: translateY(-50px);">
                         <h3>French</h3>
                         <p>Bread</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="text-white">$5.00</h5>
-                            <button class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
+                            <button aria-label="add to cart" class="btn px-3 py-2"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
         <div class="container text-center">
             <h2 class="animate">Visit Us</h2>
             <p class="animate">Discover the best bread, we look forward to your visit.</p>
-            <button class="btn animate">Contact Us</button>
+            <button aria-label="Home section" class="btn animate">Contact Us</button>
         </div>
     </section>
 
@@ -244,30 +244,30 @@
             <h2>Our Blog</h2>
             <div class="row gy-5 justify-content-evenly my-5">
                 <div class="col-md-4 animate" style="--i:0">
-                    <img src="images/blog1.png" class="img-fluid" alt="">
+                    <img loading="lazy" src="images/blog1.png" class="img-fluid" alt="bread">
                     <div class="p-3 box rounded rounded-top-0">
                         <h3>More Incoming</h3>
                         <h6 class="text-opacity-50 text-white" style="font-size: 13px;">5 Jan 2023, <span class="ps-3">157 <i class=" pe-3 fas fa-eye"></i> 13 <i class=" fas fa-comment-alt"></i></span> </h6>
                         <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus delectus laboriosam exercitationem hic deleniti?</p>
-                        <button class="btn">Learn More</button>
+                        <button aria-label="learn more" class="btn">Learn More</button>
                     </div>
                 </div>
                 <div class="col-md-4 animate" style="--i:1">
-                    <img src="images/blog2.jpg" class="img-fluid" alt="">
+                    <img loading="lazy" src="images/blog2.jpg" class="img-fluid" alt="bread">
                     <div class="p-3 box rounded rounded-top-0">
                         <h3>Healthy Bread</h3>
                         <h6 class="text-opacity-50 text-white" style="font-size: 13px;">5 Jan 2023, <span class="ps-3">157 <i class=" pe-3 fas fa-eye"></i> 13 <i class=" fas fa-comment-alt"></i></span> </h6>
                         <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus delectus laboriosam exercitationem hic deleniti?</p>
-                        <button class="btn">Learn More</button>
+                        <button aria-label="learn more" class="btn">Learn More</button>
                     </div>
                 </div>
                 <div class="col-md-4 animate" style="--i:2">
-                    <img src="images/blog3.jpg" class="img-fluid" alt="">
+                    <img loading="lazy" src="images/blog3.jpg" class="img-fluid" alt="bread">
                     <div class="p-3 box rounded rounded-top-0">
                         <h3>Discounts Soons</h3>
                         <h6 class="text-opacity-50 text-white" style="font-size: 13px;">5 Jan 2023, <span class="ps-3">157 <i class=" pe-3 fas fa-eye"></i> 13 <i class=" fas fa-comment-alt"></i></span> </h6>
                         <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus delectus laboriosam exercitationem hic deleniti?</p>
-                        <button class="btn">Learn More</button>
+                        <button aria-label="learn more" class="btn">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -344,7 +344,7 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
